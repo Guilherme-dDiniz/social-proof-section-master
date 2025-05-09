@@ -43,7 +43,7 @@ Esta é a minha solução para o desafio [Social proof section challenge on Fron
 
 ### Links
 
-- URL do site publicado: [Clique aqui]()
+- URL do site publicado: [Clique aqui](https://guilherme-ddiniz.github.io/social-proof-section-master/)
 
 ---
 
