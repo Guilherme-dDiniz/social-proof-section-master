@@ -1,0 +1,176 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --Font-size: 15px;
+}
+
+/* CENTRALIZAÇÃO DO CONTAINER */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.fundo-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fundo-inferior {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ORGANIZAÇÃO DAS INFORMAÇÕES DO CARTÃO */
+.container {
+    display: grid;
+    grid-template:
+        "informacoes" 300px
+        "comentarios" auto / 970px;
+    background-color: var(--White);
+    font-family: 'League Spartan';
+}
+
+.informacoes {
+    grid-area: informacoes;
+}
+
+.comentarios {
+    grid-area: comentarios;
+}
+
+/* ORGANIZAÇÃO DA SECTION INFORMAÇÕES */
+.informacoes {
+    display: grid;
+    grid-template:
+        "sobre-nos avaliacoes" 300px / 470px 500px;
+    /* background-color: aquamarine; */
+}
+
+.sobre-nos {
+    grid-area: sobre-nos;
+    /* background-color: cadetblue; */
+}
+
+.avaliacoes {
+    grid-area: avaliacoes;
+}
+
+/* ORGANIZAÇÃO DA DIV SOBRE-NOS */
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sobre-nos h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    padding-right: 130px;
+}
+
+.sobre-nos p {
+    font-size: var(--Font-size);
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Dark-Grayish-Magenta);
+    padding-right: 100px;
+}
+
+/* ORGANIZAÇÃO DA DIV AVALIAÇÕES */
+.avaliacoes {
+    display: flex;
+    flex-direction: column;
+    /* background-color: chartreuse; */
+}
+
+.avaliacoes p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 10px 20px;
+    margin: 5px 0px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.avaliacoes p:first-child {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.avaliacoes p:nth-child(2) {
+    margin-left: 60px;
+}
+
+.avaliacoes p:last-child {
+    margin-left: 100px;
+}
+
+/* ORGANIZAÇÃO DA SECTION COMENTARIOS */
+.comentarios {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.comentarios .comentario {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--White);
+    width: 300px;
+    height: 224px;
+}
+
+.comentarios .comentario:nth-child(2) {
+    margin-top: 15px;
+}
+
+.comentarios .comentario:last-child {
+    margin-top: 30px;
+}
+
+.comentario .informacoes-do-cliente {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.comentarios .comentario .informacoes-do-cliente img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario {
+    margin-top: 5px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario p {
+    color: var(--Soft-Pink);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.comentarios .comentario .experiencia p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+

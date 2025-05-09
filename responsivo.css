@@ -1,0 +1,299 @@
+@media(max-width: 975px) {
+
+    /* ORGANIZAÇÃO DAS INFORMAÇÕES DO CARTÃO */
+    .container {
+        display: grid;
+        grid-template:
+            "informacoes" 250px
+            "comentarios" auto / 658px;
+    }
+
+
+    /* ORGANIZAÇÃO DA SECTION INFORMAÇÕES */
+    .informacoes {
+        display: grid;
+        grid-template:
+            "sobre-nos avaliacoes" 250px / 329px 359px;
+        /* background-color: aquamarine; */
+    }
+
+    /* ORGANIZAÇÃO DA DIV SOBRE-NOS */
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobre-nos h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    padding-right: 80px;
+}
+
+.sobre-nos p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Dark-Grayish-Magenta);
+    padding-right: 50px;
+}
+
+/* ORGANIZAÇÃO DA DIV AVALIAÇÕES */
+.avaliacoes {
+    display: flex;
+    flex-direction: column;
+    /* background-color: chartreuse; */
+    width: 328px;
+}
+
+.avaliacoes p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 10px 20px;
+    margin: 5px 0px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.avaliacoes p img:first-child{
+    margin-left: 10px;
+}
+
+.avaliacoes p:first-child {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.avaliacoes p:nth-child(2) {
+    margin-left: 40px;
+}
+
+.avaliacoes p:last-child {
+    margin-left: 70px;
+}
+
+/* ORGANIZAÇÃO DA SECTION COMENTARIOS */
+.comentarios {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.comentarios .comentario {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--White);
+    width: 300px;
+    height: 230px;
+}
+
+.comentarios .comentario:nth-child(2) {
+    margin-top: 15px;
+}
+
+.comentarios .comentario:last-child {
+    margin-top: 30px;
+}
+
+.comentario .informacoes-do-cliente {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.comentarios .comentario .informacoes-do-cliente img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario {
+    margin-top: 5px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario h3 {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario p {
+    color: var(--Soft-Pink);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.comentarios .comentario .experiencia p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+}
+
+@media(max-width: 660px) {
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        
+    }
+
+    .fundo-superior img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .fundo-inferior img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    /* ORGANIZAÇÃO DAS INFORMAÇÕES DO CARTÃO */
+    .container {
+        display: grid;
+        grid-template:
+            "informacoes" 340px
+            "comentarios" auto / 300px;
+            margin: 80px 0px;
+    }
+
+
+    /* ORGANIZAÇÃO DA SECTION INFORMAÇÕES */
+    .informacoes {
+        display: grid;
+        grid-template:
+            "sobre-nos" 120px
+            "avaliacoes" 220px / 300px;
+        /* background-color: aquamarine; */
+        justify-content: center;
+    }
+
+    /* ORGANIZAÇÃO DA DIV SOBRE-NOS */
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobre-nos h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.sobre-nos p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Dark-Grayish-Magenta);
+    padding: 0px 20px;
+    text-align: center;
+}
+
+/* ORGANIZAÇÃO DA DIV AVALIAÇÕES */
+.avaliacoes {
+    display: flex;
+    flex-direction: column;
+    /* background-color: chartreuse; */
+    width: 280px;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.avaliacoes p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 10px 60px;
+    margin: 5px 0px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.avaliacoes p img:first-child{
+    margin-left: 10px;
+}
+
+.avaliacoes p:first-child {
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.avaliacoes p:nth-child(2) {
+    margin-left: 0px;
+}
+
+.avaliacoes p:last-child {
+    margin-left: 0px;
+}
+
+/* ORGANIZAÇÃO DA SECTION COMENTARIOS */
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.comentarios .comentario {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--White);
+    width: 280px;
+    height: 230px;
+}
+
+.comentarios .comentario:nth-child(2) {
+    margin-top: 0px;
+}
+
+.comentarios .comentario:last-child {
+    margin-top: 0px;
+}
+
+.comentario .informacoes-do-cliente {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.comentarios .comentario .informacoes-do-cliente img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario {
+    margin-top: 5px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario h3 {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.comentarios .comentario .informacoes-do-cliente .usuario p {
+    color: var(--Soft-Pink);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.comentarios .comentario .experiencia p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+
+}
